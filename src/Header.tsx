@@ -8,7 +8,7 @@ interface IHeader {
 }
 export function Header({ isOpen, setOpen }: IHeader) {
   return (
-    <header className="flex bg-white shadow-sm justify-between items-center fixed top-0 z-10 w-full px-2">
+    <header className="lg:hidden flex bg-white shadow-sm justify-between items-center fixed top-0 z-10 w-full h-[63px] px-2">
       <div className="flex gap-1 items-center">
         <div>
           <img src={logo} alt="" />

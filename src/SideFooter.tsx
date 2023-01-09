@@ -8,11 +8,17 @@ const footerLinks: LinksType = [
 ];
 export function SideFooter() {
   return (
-    <ul className="flex flex-col gap-3">
+    <ul className="flex flex-col gap-6">
       {footerLinks.map(({ icon, link }) => (
         <li className="flex gap-2 items-center">
-          <img src={icon} alt="" />
-          <a className="text-[#344054] font-medium font-sans" href={link}>
+          <div className="w-[20px] h-[20px]">
+            <img
+              className="object-cover max-w-full max-h-full"
+              src={icon}
+              alt="icon"
+            />
+          </div>
+          <a className="text-[#344054] text-sm font-medium font-sans" href={link}>
             {link}
           </a>
         </li>
